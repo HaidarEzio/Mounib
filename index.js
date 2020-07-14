@@ -11,6 +11,6 @@ function createStars(type, quantity) {
 function randomNumber(min, max) {
   return Math.floor(Math.random() * max) + min;
 }
-createStars(1, 100);
-createStars(2, 85);
-createStars(3, 70);
+createStars(1, 80);
+createStars(2, 70);
+createStars(3, 80);
