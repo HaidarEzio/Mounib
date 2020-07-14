@@ -1,0 +1,12 @@
+.header {
+  &__text--main {
+    color: whitesmoke;
+    font-size: 5rem;
+    background-color: rgb(31, 31, 31);
+  }
+  &__text--sub {
+    font-size: 5rem;
+    color: whitesmoke;
+    background-color: rgb(31, 31, 31);
+  }
+}

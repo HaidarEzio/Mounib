@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=62.5%
+  @media (max-width: 688px) and (min-width: 425px) {
+    font-size: 30%;
+  }
+  @media (max-width: 425px) {
+    font-size: 25%;
+  }
+}
