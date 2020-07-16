@@ -11,6 +11,9 @@ function createStars(type, quantity) {
 function randomNumber(min, max) {
   return Math.floor(Math.random() * max) + min;
 }
-createStars(1, 80);
-createStars(2, 70);
-createStars(3, 80);
+// * Making the stars only appeare on the desktops + tablets
+if (screen.width > 425) {
+  createStars(1, 30);
+  createStars(2, 20);
+  createStars(3, 30);
+}

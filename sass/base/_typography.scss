@@ -1,12 +1,32 @@
 .header {
   &__text--main {
+    font-family: "hackney", sans-serif;
+    letter-spacing: 2.2rem;
     color: whitesmoke;
-    font-size: 5rem;
-    background-color: rgb(31, 31, 31);
+    font-size: 15rem;
+    transition: all 0.2s;
+    user-select: none;
+    &:hover {
+      text-shadow: 0 0 0.4rem whitesmoke;
+    }
   }
   &__text--sub {
+    font-family: "hackney", sans-serif;
+    font-size: 8rem;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    user-select: none;
+    &:hover {
+      text-shadow: 0 0 0.4rem whitesmoke;
+    }
+  }
+  &__text--tertiary {
+    text-align: center;
+    font-family: "miles", sans-serif;
     font-size: 5rem;
     color: whitesmoke;
-    background-color: rgb(31, 31, 31);
+    letter-spacing: 7px;
+    user-select: none;
+    text-shadow: 0 0 0.4rem whitesmoke;
   }
 }

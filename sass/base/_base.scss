@@ -5,7 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "hackney";
+  src: url("../fonts/hackney.ttf");
+}
+@font-face {
+  font-family: "miles";
+  src: url("../fonts/AbsoluteNeonScript.ttf");
+}
+@font-face {
+  font-family: "miles";
+  src: url("../fonts/neonAbsolutet.ttf");
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=62.5%
