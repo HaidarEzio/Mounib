@@ -6,6 +6,12 @@
   overflow: hidden;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media only screen and (max-width: 569px) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
   &__logo {
     &--img {
       height: 5rem;
@@ -17,16 +23,6 @@
     }
     &--img:hover {
       transform: scale(1.2);
-    }
-  }
-  &__container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    @media only screen and (max-width: 569px) {
-      flex-direction: column;
-      justify-content: space-around;
     }
   }
   &__text--box {

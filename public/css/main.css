@@ -117,6 +117,15 @@ html {
   overflow: hidden;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 569px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .header__logo--img {
@@ -130,20 +139,6 @@ html {
 
 .header__logo--img:hover {
   transform: scale(1.2);
-}
-
-.header__container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@media only screen and (max-width: 569px) {
-  .header__container {
-    flex-direction: column;
-    justify-content: space-around;
-  }
 }
 
 .header__text--box {
