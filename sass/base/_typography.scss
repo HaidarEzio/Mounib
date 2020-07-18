@@ -4,11 +4,14 @@
     letter-spacing: 2.2rem;
     color: whitesmoke;
     font-size: 15rem;
-    transition: all 0.2s;
+    transition: all 0.4s;
     user-select: none;
     &:hover {
       text-shadow: 0 0 0.4rem whitesmoke;
     }
+  }
+  &__text--main:hover + &__text--sub {
+    text-shadow: 0 0 0.4rem whitesmoke;
   }
   &__text--sub {
     font-family: "hackney", sans-serif;
@@ -16,9 +19,7 @@
     color: whitesmoke;
     letter-spacing: 5px;
     user-select: none;
-    &:hover {
-      text-shadow: 0 0 0.4rem whitesmoke;
-    }
+    transition: all 0.4s;
   }
   &__text--tertiary {
     text-align: center;
@@ -28,5 +29,11 @@
     letter-spacing: 7px;
     user-select: none;
     text-shadow: 0 0 0.4rem whitesmoke;
+  }
+}
+.polaroid {
+  &__box--text {
+    font-size: 8rem;
+    font-family: "os";
   }
 }

@@ -14,8 +14,20 @@
   src: url("../fonts/AbsoluteNeonScript.ttf");
 }
 @font-face {
-  font-family: "miles";
-  src: url("../fonts/neonAbsolutet.ttf");
+  font-family: "rockness";
+  src: url("../fonts/Rockness.ttf");
+}
+@font-face {
+  font-family: "artifact";
+  src: url("../fonts/Artifact.otf");
+}
+@font-face {
+  font-family: "bs";
+  src: url("../fonts/BlackSingature.ttf");
+}
+@font-face {
+  font-family: "os";
+  src: url("../fonts/OneSignature.ttf");
 }
 html {
   box-sizing: border-box;
@@ -26,4 +38,7 @@ html {
   @media (max-width: 425px) {
     font-size: 25%;
   }
+}
+a {
+  color: black;
 }

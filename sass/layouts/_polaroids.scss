@@ -1,0 +1,92 @@
+.polaroid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 100vh;
+
+  background-image: url(../img/Nature/28.jpg);
+  background-size: cover;
+  position: relative;
+  &__box {
+    position: relative;
+    background-image: url(../img/polaroids/1.1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    width: 29rem;
+    height: 35rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &--text {
+      position: absolute;
+      bottom: 0rem;
+      right: 8.5rem;
+      margin-bottom: -1rem;
+    }
+  }
+  &__frame {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    // * The Glow Effect
+    .glow-wrap {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 150%;
+      top: 0;
+      margin-top: -1rem;
+    }
+
+    .glow {
+      display: block;
+      position: absolute;
+      width: 40%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.2);
+      top: 0;
+      filter: blur(5px);
+      transform: rotate(45deg) translate(-450%, 0);
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    &:hover .glow {
+      transform: rotate(45deg) translate(450%, 0);
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    // * The Glow Effect
+  }
+  &__pic {
+    padding: 2rem 1.6rem 0; //! this makes the image line up with the frame of the polaroid
+    width: 100%;
+    transition: all 0.5s ease;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 15rem;
+      z-index: 2;
+      background: linear-gradient(to bottom, #111, transparent);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5rem;
+      z-index: 2;
+      background: linear-gradient(to top, #111, transparent);
+    }
+  }
+
+  // *background-image: url(../img/polaroids/1.1.png);
+}
