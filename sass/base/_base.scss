@@ -29,6 +29,10 @@
   font-family: "os";
   src: url("../fonts/OneSignature.ttf");
 }
+html,
+body {
+  width: 100%;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=62.5%
