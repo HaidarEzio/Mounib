@@ -1,0 +1,113 @@
+.footer {
+  background-image: url(../img/Nature/31.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &__start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30rem;
+  }
+  &__logo {
+    width: 9rem;
+    padding: 15px 0;
+    backface-visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 20px;
+    &--icon {
+      text-decoration: none;
+      color: #000;
+      &--I > .fa-instagram {
+        transition: all 0.2s ease-in-out;
+      }
+      &--I:hover > .fa-instagram {
+        color: transparent;
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+  &__para {
+    width: 40rem;
+    border-right: 1px solid rgb(0, 0, 0);
+    margin-left: -10px;
+  }
+  &__img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    &-1 {
+      width: 25rem;
+    }
+  }
+  &__end {
+    padding: 5rem 0;
+  }
+  &__end > p {
+    font-family: "rockness";
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    z-index: 2;
+    background: linear-gradient(to bottom, #111, transparent);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    z-index: 2;
+    background: linear-gradient(to top, #111, transparent);
+  }
+}
+.fa-twitter {
+  transition: all 0.2s ease-in-out;
+}
+.fa-twitter:hover {
+  color: transparent;
+  color: #55acee;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-facebook {
+  transition: all 0.2s ease-in-out;
+}
+.fa-facebook:hover {
+  color: #1977f3;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
