@@ -9,26 +9,6 @@
   }
 }
 
-@keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -183,22 +163,49 @@ a {
 }
 
 .gallery {
+  padding: 10rem 0;
+  background-image: url(../img/Nature/4.jpg);
+  background-size: contain;
   display: grid;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: 8px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.gallery:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  z-index: 2;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+
+.gallery:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  z-index: 2;
+  background: linear-gradient(to top, #111, transparent);
 }
 
 .gallery img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 0 16px #333;
+  box-shadow: 0 0 16px #111111;
   transition: all 1.5s ease;
 }
 
 .gallery img:hover {
-  box-shadow: 0 0 32px #333;
+  box-shadow: 0 0 32px #111111;
 }
 
 .gallery .content {
@@ -220,6 +227,221 @@ a {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.705);
+  display: flex;
+  align-items: center;
+  padding: 0 30rem;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  overflow-x: hidden;
+}
+
+.container1 {
+  padding: 0 10rem;
+}
+
+.container2 {
+  padding: 0 10rem;
+}
+
+.container:target {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(5px);
+}
+
+.container:target .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container:target .poped {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container:target .pop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+  position: relative;
+}
+
+.popup img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #111111;
+  transition: all 0.5s ease;
+}
+
+.popup img:hover {
+  box-shadow: 0 0 32px #111111;
+}
+
+.popup__close {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  z-index: 50;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.popup__close:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0rem 1rem black;
+}
+
+.popup__content {
+  padding: 0.7rem;
+}
+
+.popup__item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.popup__item:hover {
+  transform: scale(1.05);
+}
+
+.poped {
+  display: grid;
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-auto-rows: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+  position: relative;
+}
+
+.poped img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #111111;
+  transition: all 0.5s ease;
+}
+
+.poped img:hover {
+  box-shadow: 0 0 32px #111111;
+}
+
+.poped__close1 {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  z-index: 50;
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.poped__close1:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0rem 1rem black;
+}
+
+.poped__content {
+  padding: 0.7rem;
+}
+
+.poped__item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.poped__item:hover {
+  transform: scale(1.05);
+}
+
+.pop {
+  display: grid;
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+  position: relative;
+}
+
+.pop img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #111111;
+  transition: all 0.5s ease;
+}
+
+.pop img:hover {
+  box-shadow: 0 0 32px #111111;
+}
+
+.pop__close {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  z-index: 50;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.pop__close:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0rem 1rem black;
+}
+
+.pop__content {
+  padding: 0.7rem;
+}
+
+.pop__item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.pop__item:hover {
+  transform: scale(1.05);
 }
 
 .polaroid {
@@ -262,39 +484,13 @@ a {
   backface-visibility: hidden;
 }
 
-.polaroid__frame .glow-wrap {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 150%;
-  top: 0;
-  margin-top: -1rem;
-}
-
-.polaroid__frame .glow {
-  display: block;
-  position: absolute;
-  width: 40%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.2);
-  top: 0;
-  filter: blur(5px);
-  transform: rotate(45deg) translate(-450%, 0);
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.polaroid__frame:hover .glow {
-  transform: rotate(45deg) translate(450%, 0);
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
 .polaroid__pic {
   padding: 2rem 1.6rem 0;
   width: 100%;
   transition: all 0.5s ease;
 }
 
-.polaroid__pic:before {
+.polaroid:before {
   content: "";
   position: absolute;
   top: 0;
@@ -305,13 +501,13 @@ a {
   background: linear-gradient(to bottom, #111, transparent);
 }
 
-.polaroid__pic:after {
+.polaroid:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 15rem;
   z-index: 2;
   background: linear-gradient(to top, #111, transparent);
 }
@@ -321,6 +517,7 @@ a {
   background-image: url(../img/moon.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
   position: relative;
   display: flex;
