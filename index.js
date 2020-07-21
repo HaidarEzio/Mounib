@@ -17,6 +17,10 @@ if (screen.width > 425) {
   createStars(1, 30);
   createStars(2, 20);
   createStars(3, 30);
+} else {
+  createStars(1, 20);
+  createStars(2, 10);
+  createStars(3, 20);
 }
 //////////////////! STARS
 //////////////////* GALLERY RESIZING ALGORITHM
