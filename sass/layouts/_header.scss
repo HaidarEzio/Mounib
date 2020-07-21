@@ -14,12 +14,12 @@
     justify-content: space-around;
   }
   &__logo {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
     &--img {
       height: 5rem;
       width: 5rem;
-      position: absolute;
-      top: 3rem;
-      left: 4rem;
       transition: all 0.2s ease;
     }
     &--img:hover {
@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     margin-left: -12rem;
-
     @media only screen and (max-width: 569px) {
       margin-left: 0;
     }

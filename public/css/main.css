@@ -504,11 +504,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .polaroid__box1 {
-  background-image: url(../img/minified/polaroids/2.1.png);
+  background-image: url(../img/minified/polaroids/1.1.png);
 }
 
 .polaroid__box2 {
-  background-image: url(../img/minified/polaroids/3.1.png);
+  background-image: url(../img/minified/polaroids/1.1.png);
 }
 
 .polaroid__box3 {
@@ -720,12 +720,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.header__logo--img {
-  height: 5rem;
-  width: 5rem;
+.header__logo {
   position: absolute;
   top: 3rem;
   left: 4rem;
+}
+
+.header__logo--img {
+  height: 5rem;
+  width: 5rem;
   transition: all 0.2s ease;
 }
 
