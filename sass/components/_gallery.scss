@@ -28,7 +28,7 @@
   grid-row-gap: 8px;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-auto-rows: 8px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   &:before {
     content: "";
