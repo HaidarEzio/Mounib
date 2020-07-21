@@ -67,7 +67,6 @@
     transition: grid-row-start 300ms linear;
     transition: transform 300ms ease;
     transition: all 0.5s ease;
-    cursor: pointer;
     &:hover {
       transform: scale(1.025);
     }
