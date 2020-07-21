@@ -42,11 +42,6 @@
   src: url("../fonts/OneSignature.ttf");
 }
 
-html,
-body {
-  width: 100%;
-}
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
