@@ -602,6 +602,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   height: 100%;
   margin-left: 20px;
 }
@@ -674,13 +675,13 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, #111, transparent);
 }
 
-.fa-twitter {
+.fa-behance {
   transition: all 0.2s ease-in-out;
 }
 
-.fa-twitter:hover {
+.fa-behance:hover {
   color: transparent;
-  color: #55acee;
+  color: #1666f8;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -695,9 +696,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-background-clip: text;
 }
 
+.T {
+  width: 100%;
+}
+
 .header {
   height: 100vh;
-  background-image: url(../img/moon.jpg);
+  background-image: url(../img/minified/moon.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
