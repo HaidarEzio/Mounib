@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb {
 
 .gallery {
   padding: 10rem 2rem;
-  background-image: url(../img/Nature/4.jpg);
+  background-image: url(../img/minified/Nature/4.jpg);
   background-size: contain;
   display: grid;
   grid-column-gap: 8px;
@@ -498,7 +498,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   padding: 2rem;
   height: 100vh;
-  background-image: url(../img/Nature/28.jpg);
+  background-image: url(../img/minified/Nature/28.jpg);
   background-size: cover;
   position: relative;
 }
@@ -571,7 +571,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer {
-  background-image: url(../img/Nature/31.jpg);
+  background-image: url(../img/minified/Nature/31.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
