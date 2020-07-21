@@ -486,6 +486,29 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.05);
 }
 
+#loader {
+  background-color: #16141c;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  transition: all 0.2s ease-in-out;
+}
+
+.fadeOut {
+  opacity: 0 !important;
+  transition: all 1s;
+}
+
+.fadeIn {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  transition: all 1s;
+}
+
 .polaroid {
   display: flex;
   justify-content: space-evenly;
