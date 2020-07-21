@@ -8,9 +8,17 @@
   background-image: url(../img/Nature/28.jpg);
   background-size: cover;
   position: relative;
+  &__box1 {
+    background-image: url(../img/minified/polaroids/2.1.png);
+  }
+  &__box2 {
+    background-image: url(../img/minified/polaroids/3.1.png);
+  }
+  &__box3 {
+    background-image: url(../img/minified/polaroids/1.1.png);
+  }
   &__box {
     position: relative;
-    background-image: url(../img/polaroids/1.1.png);
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 0.2s;
