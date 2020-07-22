@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  @media only screen and (max-width: 520px) {
+    height: 100%;
+  }
   &__start {
     display: flex;
     flex-direction: column;
@@ -15,12 +18,25 @@
     align-items: center;
     justify-content: space-evenly;
     height: 30rem;
+    @media only screen and (max-width: 520px) {
+      flex-direction: column;
+      height: 60rem;
+    }
+    @media only screen and (max-width: 425px) {
+      height: 70rem;
+    }
   }
   &__logo {
     width: 9rem;
     padding: 15px 0;
     backface-visibility: hidden;
     transition: all 0.2s ease-in-out;
+    @media only screen and (max-width: 808px) {
+      width: 7rem;
+    }
+    @media only screen and (max-width: 425px) {
+      padding: 8px 0;
+    }
     &:hover {
       transform: scale(1.2);
     }
@@ -32,9 +48,25 @@
     align-items: center;
     height: 100%;
     margin-left: 20px;
+    @media only screen and (max-width: 520px) {
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      width: 25rem;
+      margin-left: 0;
+    }
+    @media only screen and (max-width: 425px) {
+      width: 40rem;
+    }
     &--icon {
       text-decoration: none;
       color: #000;
+      @media only screen and (max-width: 808px) {
+        font-size: 0.9rem;
+      }
+      @media only screen and (max-width: 425px) {
+        font-size: 1.3rem;
+      }
       &--I > .fa-instagram {
         transition: all 0.2s ease-in-out;
       }
@@ -54,6 +86,18 @@
     width: 40rem;
     border-right: 1px solid rgb(0, 0, 0);
     margin-left: -10px;
+    @media only screen and (max-width: 808px) {
+      width: 30rem;
+    }
+    @media only screen and (max-width: 520px) {
+      border-top: 1px solid rgb(0, 0, 0);
+      border-right: 0;
+      margin-left: 0;
+      width: 40rem;
+    }
+    @media only screen and (max-width: 425px) {
+      width: 50rem;
+    }
   }
   &__img {
     width: 30%;
@@ -62,6 +106,9 @@
 
     &-1 {
       width: 25rem;
+      @media only screen and (max-width: 808px) {
+        width: 20rem;
+      }
     }
   }
   &__end {

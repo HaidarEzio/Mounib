@@ -6,24 +6,26 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "hackney";
-  src: url("../fonts/hackney.ttf");
+  font-family: "os";
+  src: url("../fonts/OneSignature.ttf");
+}
+
+@font-face {
+  font-family: "rockness";
+  src: url("../fonts/Rockness.ttf");
 }
 @font-face {
   font-family: "miles";
   src: url("../fonts/AbsoluteNeonScript.ttf");
 }
 @font-face {
-  font-family: "rockness";
-  src: url("../fonts/Rockness.ttf");
-}
-@font-face {
   font-family: "artifact";
   src: url("../fonts/Artifact.otf");
 }
+
 @font-face {
-  font-family: "os";
-  src: url("../fonts/OneSignature.ttf");
+  font-family: "hackney";
+  src: url("../fonts/hackney.ttf");
 }
 html {
   box-sizing: border-box;
@@ -59,3 +61,4 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
 }
+////////////////////? SCROLL BAR

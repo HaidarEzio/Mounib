@@ -77,19 +77,29 @@
     text-transform: uppercase;
     font-size: 5rem;
     text-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.691);
+    @media only screen and (max-width: 808px) {
+      font-size: 3rem;
+    }
   }
   &__para--text {
     font-family: "Raleway";
     text-align: left;
     font-size: 2rem;
     line-height: 35px;
-  }
-}
-.T {
-  @media (max-width: 425px) {
-    font-size: 10rem;
-  }
-  @media (min-width: 425px) and (max-width: 664px) {
-    font-size: 10rem;
+    @media only screen and (max-width: 808px) {
+      font-size: 1.7rem;
+      padding-right: 10px;
+    }
+    @media only screen and (max-width: 520px) {
+      line-height: 20px;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 5px;
+      padding-right: 0;
+    }
+    @media only screen and (max-width: 425px) {
+      line-height: 15px;
+      font-size: 2rem;
+    }
   }
 }
