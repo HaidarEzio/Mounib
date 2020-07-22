@@ -1,13 +1,23 @@
 .header {
   &__text--main {
     font-family: "hackney", sans-serif;
-    letter-spacing: 2.2rem;
+    letter-spacing: 22px;
     color: whitesmoke;
     font-size: 15rem;
     transition: all 0.4s;
     user-select: none;
     &:hover {
       text-shadow: 0 0 0.4rem whitesmoke;
+    }
+    @media only screen and (max-width: 1270px) {
+      font-size: 10rem;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 8rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 12rem;
     }
   }
   &__text--main:hover + &__text--sub {
@@ -20,6 +30,16 @@
     letter-spacing: 5px;
     user-select: none;
     transition: all 0.4s;
+    @media only screen and (max-width: 1270px) {
+      font-size: 6rem;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 4.5rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 7.5rem;
+    }
   }
   &__text--tertiary {
     text-align: center;
@@ -29,6 +49,18 @@
     letter-spacing: 7px;
     user-select: none;
     text-shadow: 0 0 0.4rem whitesmoke;
+    @media only screen and (max-width: 1270px) {
+      font-size: 3.5rem;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 688px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 5rem;
+    }
   }
 }
 .polaroid {

@@ -28,11 +28,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=62.5%
-  @media (max-width: 688px) and (min-width: 425px) {
-    font-size: 30%;
+  @media only screen and (max-width: 688px) and (min-width: 425px) {
+    font-size: 50%; //? 8px
   }
-  @media (max-width: 425px) {
-    font-size: 25%;
+  //TODO in here, you have to increase the numbers rather than lower
+  @media only screen and (max-width: 425px) {
+    font-size: 31.25%; //? 5px
   }
 }
 a {
