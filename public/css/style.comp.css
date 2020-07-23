@@ -821,7 +821,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center; }
     .footer__img-1 {
-      width: 25rem; }
+      width: 25rem;
+      height: auto; }
       @media only screen and (max-width: 808px) {
         .footer__img-1 {
           width: 20rem; } }
