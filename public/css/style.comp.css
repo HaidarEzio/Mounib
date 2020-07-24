@@ -819,10 +819,13 @@ body::-webkit-scrollbar-thumb {
   .footer__img {
     width: 30%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    height: 40rem; }
+    @media only screen and (max-width: 808px) {
+      .footer__img {
+        height: 33rem; } }
     .footer__img-1 {
-      width: 25rem;
-      height: auto; }
+      width: 25rem; }
       @media only screen and (max-width: 808px) {
         .footer__img-1 {
           width: 20rem; } }

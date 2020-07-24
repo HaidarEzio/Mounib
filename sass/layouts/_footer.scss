@@ -103,10 +103,13 @@
     width: 30%;
     display: flex;
     justify-content: center;
-
+    height: 40rem;
+    @media only screen and (max-width: 808px) {
+      height: 33rem;
+    }
     &-1 {
       width: 25rem;
-      height: auto;
+
       @media only screen and (max-width: 808px) {
         width: 20rem;
       }
