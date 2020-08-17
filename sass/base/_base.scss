@@ -33,6 +33,7 @@ html {
   @media only screen and (max-width: 688px) and (min-width: 425px) {
     font-size: 50%; //? 8px
   }
+  scroll-behavior: smooth;
   //TODO in here, you have to increase the numbers rather than lower
   @media only screen and (max-width: 425px) {
     font-size: 31.25%; //? 5px
