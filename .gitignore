@@ -12927,3 +12927,7 @@ node_modules/glob-watcher/node_modules/fsevents/src/constants.cc
 node_modules/glob-watcher/node_modules/fsevents/src/methods.cc
 node_modules/glob-watcher/node_modules/fsevents/src/storage.cc
 node_modules/glob-watcher/node_modules/fsevents/src/thread.cc
+
+thinking.js
+
+.vscode/launch.json
